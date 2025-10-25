@@ -1,0 +1,43 @@
+# Editor/Temporary Files
+*.swp
+.vscode/
+
+# Example: If your OS generates them
+.DS_Store
+Thumbs.db
+
+# Other Projects/Demos (VERY IMPORTANT)
+my-first-repo/
+newrepository/
+Save the .gitignore file.
+
+2. Commit the New Content
+The remaining file is probably one you do want to track:
+
+test.html: This looks like a temporary file you created for testing. Decide if it's needed for the final project.
+
+If you want to track and commit the test.html and the new .gitignore:
+
+Bash
+
+# Stage the .gitignore file and test.html
+git add .gitignore test.html
+
+# Commit the changes (using a descriptive message)
+git commit -m "chore: add gitignore to exclude editor files, and include test.html"
+3. Push to Remote
+After the commit, your local main branch will be ahead of origin/main. Push the changes up to GitHub:
+
+Bash
+
+git push
+Final Status Check:
+After this, when you run git status, you should get the clean message:
+
+Bash
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
